@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h> // Untuk fungsi pow
 
 int main()
 {
