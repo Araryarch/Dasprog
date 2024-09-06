@@ -11,23 +11,26 @@ int main()
   originalNum = num;
 
   int digits[10];
-  int i = 0;
+  int digit = 0;
 
-  // Ekstrak digit dari num
+  // digit dari num contohnya 123 menjadi 1,2,3 agar bisa diubah setiap angka
   while (num > 0)
   {
-    digits[i] = num % 10;
+    digits[digit] = num % 10;
     num /= 10;
-    i++;
+    digit++;
   }
 
-  for (int j = 0; j < i; j++)
+  // memangkatkan dan menjumlahkan dengan jumlah digit misal 153 menjadi 1^3 + 5^3 + 3^3
+  for (int j = 0; j < digit; j++)
   {
-    arms += pow(digits[j], i);
+    arms += pow(digits[j], digit);
   }
 
+  // membandingkan hasil rumus armstrong di number aseli atau angka awal
   if (arms == originalNum)
   {
+    // jika sama berarti armstrong jika beda brati engga
     printf("Merupakan Bilangan Armstrong");
   }
   else
