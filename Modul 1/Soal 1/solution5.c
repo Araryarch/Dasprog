@@ -9,7 +9,7 @@ int main()
   puluhan = num % 100 / 10;
   satuan = num % 10;
 
-  if ((ratusan * ratusan * ratusan) + (puluhan * puluhan * puluhan) + (satuan * satuan * satuan) == num && num == 1)
+  if ((ratusan * ratusan * ratusan) + (puluhan * puluhan * puluhan) + (satuan * satuan * satuan) == num || num < 10)
   {
     printf("Merupakan Bilangan Armstrong");
   }
