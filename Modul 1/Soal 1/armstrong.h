@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
+void armstrong(int num)
 {
-  int num, result;
-  scanf("%d", &num);
-
   if ((pow(num / 100, 3) + pow(num % 100 / 10, 3) + pow(num % 10, 3)) == num && num > 99)
   {
     printf("Bilangan Armstrong");
@@ -14,5 +11,4 @@ int main()
   {
     printf("Bukan Bilangan Armstrong");
   }
-  return 0;
 }
