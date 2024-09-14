@@ -42,12 +42,6 @@ int main()
     break;
   }
 
-  // Menampilkan puluhan dan satuan
-  // if (ratusan != 0 && (puluhan != 0 || satuan != 0))
-  // {
-  //   printf("dan ");
-  // }
-
   if (puluhan == 1)
   {
     switch (satuan)
